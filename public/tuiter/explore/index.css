@@ -1,0 +1,196 @@
+/* Explore-CSS */
+
+.wd-search-box {
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 50px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(105, 105, 105);
+    border: none;
+    margin-right: 100px;
+    width: 400px;
+    font-family: Arial, sans-serif;
+}
+
+.wd-search-container {
+    position: relative;
+}
+
+.wd-search-container i.fas {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgb(105, 105, 105);
+}
+
+.wd-search-container i.fas:before {
+    font-size: 18px;
+}
+
+.wd-tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.wd-tabs li {
+    margin-right: 60px;
+    border-bottom: 1px solid transparent; 
+    color: rgb(105, 105, 105);
+    padding-bottom: 10px;
+}
+
+.wd-tabs .wd-active {
+    color: black;
+    border-bottom: 4px solid rgb(0, 153, 255);
+}
+
+.wd-trending-bullets {
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color:black;
+    font-size: 16px; 
+
+}
+
+.wd-trending-bullets li {
+    margin-bottom: 20px;
+}
+
+.wd-trending-bullets .wd-light-grey {
+    color: rgb(105, 105, 105);
+    font-size: 14px; 
+    display:block;
+}
+
+.wd-image-container{
+    position: relative;
+    text-align: center;
+    
+}
+
+.wd-banner-overlay{
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  top: 45%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+}
+
+/* EXPLORE */
+
+/* Text Overlay */
+
+.wd-overlay {
+    font-weight: bold;
+    color:white;
+    position:absolute;
+    bottom:4px;
+    left:4px;
+    margin:0px;
+}
+
+.wd-center-img {
+    position: relative;
+    display: inline-block;
+}
+
+/* Sizing & Spacing*/
+
+.wd-center {
+    display: flex; /* Use flexbox to center the contents */
+    justify-content: center; /* Center horizontally */
+}
+
+.wd-gray16 {
+    color: rgb(105, 105, 105);
+    font-size: 16px;
+}
+
+.wd-bold16 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wd-square {
+    width: 18%;
+    height: 18%;
+    border-radius: 15px;
+}
+
+#searchoffset {
+    padding-left: 40px;
+}
+
+.wd-suggestions {
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Image & Color Classes */
+
+.wd-blue {
+    color: rgb(16,108,252);
+}
+
+.wd-blue-button {
+    background-color: rgb(16,108,252);
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 25px;
+}
+
+.wd-blue-follow {
+    background-color: rgb(16,108,252);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 25px;
+}
+
+.wd-verified {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.wd-verified-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin-top: -3px;
+}
+
+.wd-profile-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    float: left;
+    border-radius: 50%;
+}
+
+.wd-posted {
+    color: rgb(105, 105, 105);
+    font-size: 16px;
+    font-weight: normal;
+    float: left;
+}
+
+
+
+
