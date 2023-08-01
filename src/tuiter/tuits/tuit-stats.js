@@ -10,7 +10,8 @@ const TuitStats = (
             "replies": 123,
             "retuits": 432,
             "likes": 2345,
-            "liked": false
+            "liked": false,
+            "_id": 234,
         }
     }
 ) => {
@@ -23,7 +24,7 @@ const TuitStats = (
                 <BiRepost /> {tuit.retuits}
             </div>
             <div className="col-3">
-                <TuitLiked tuit={tuit} />
+                <TuitLiked tuit={tuit}/>
             </div>
             <div className="col-3"> <span> <LuShare/> </span> </div>
         </div>

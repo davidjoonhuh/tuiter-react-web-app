@@ -18,7 +18,6 @@ function Tuiter() {
   return (
     <Provider store={store}>
       <div class="d-none d-xxl-block">
-      <div class="position-fixed">XXL</div>
         <div>
           <Nav />
           <div className="row">
@@ -41,7 +40,6 @@ function Tuiter() {
       </div>
 
       <div class="d-none d-xl-block d-xxl-none">
-      <div class="position-fixed">XL</div>
         <div>
           <Nav />
           <div className="row">
@@ -64,7 +62,6 @@ function Tuiter() {
       </div>
 
       <div class="d-none d-lg-block d-xl-none">
-      <div class="position-fixed">L</div>
         <div>
           <Nav />
           <div className="row">
@@ -87,7 +84,6 @@ function Tuiter() {
       </div>
 
       <div class="d-none d-md-block d-lg-none">
-      <div class="position-fixed">M</div>
         <div>
           <Nav />
           <div className="row">
@@ -107,7 +103,6 @@ function Tuiter() {
       </div>
 
       <div class="d-none d-sm-block d-md-none">
-      <div class="position-fixed">S</div>
         <div>
           <Nav />
           <div className="row">
