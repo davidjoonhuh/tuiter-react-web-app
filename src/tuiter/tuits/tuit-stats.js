@@ -1,6 +1,5 @@
 import React from "react";
 import { BiComment, BiRepost } from "react-icons/bi"
-import { AiOutlineHeart } from "react-icons/ai"
 import { LuShare } from "react-icons/lu"
 import TuitLiked from "./tuit-liked";
 
@@ -26,7 +25,7 @@ const TuitStats = (
             <div className="col-3">
                 <TuitLiked tuit={tuit} />
             </div>
-            <div className="col-3"> <LuShare /> </div>
+            <div className="col-3"> <span> <LuShare/> </span> </div>
         </div>
     );
 };

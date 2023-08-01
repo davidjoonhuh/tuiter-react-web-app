@@ -13,15 +13,13 @@ const TuitLiked = (
     if (tuit.liked === false) {
         return (
             <>
-                <AiFillHeart />
-                {tuit.likes}
+                <AiFillHeart /> {tuit.likes}
             </>
         );
     } else {
         return (
             <>
-                <AiFillHeart className="text-danger" />
-                {tuit.likes}
+                <AiFillHeart className="text-danger" /> {tuit.likes}
             </>
         );
     }
