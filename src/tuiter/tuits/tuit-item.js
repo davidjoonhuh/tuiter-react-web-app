@@ -1,9 +1,9 @@
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import { deleteTuitThunk } from "../services/tuits-thunks";
 import React from "react";
 import { MdVerified } from "react-icons/md"
 import TuitStats from "./tuit-stats";
-import {AiOutlineClose} from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai"
 
 const TuitItem = (
   {
@@ -25,7 +25,7 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   return (
     <li className="list-group-item">
@@ -36,7 +36,7 @@ const TuitItem = (
         <div className="col-10">
           <div>
             <AiOutlineClose className="bi bi-x-lg float-end"
-            onClick={() => deleteTuitHandler(tuit._id)}> </AiOutlineClose>
+              onClick={() => deleteTuitHandler(tuit._id)}> </AiOutlineClose>
             <span className="fw-bolder"> {tuit.userName}  </span>
             <MdVerified /> {tuit.handle} · {tuit.time}
           </div>
@@ -48,3 +48,4 @@ const TuitItem = (
   );
 };
 export default TuitItem;
+

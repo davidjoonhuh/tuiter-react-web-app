@@ -15,7 +15,7 @@ const TuitSummaryItem = (
   <li className="list-group-item">
    <div className="row">
      <div className="col-10">
-       <div>{tuit.userName} . {tuit.time}</div>
+       <div>{tuit.username} · {tuit.time}</div>
        <div className="fw-bolder">{tuit.topic}</div>
        <div>{tuit.title}</div>
      </div>
