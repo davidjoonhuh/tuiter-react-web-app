@@ -25,7 +25,7 @@ const NavigationSidebar = ({ iconstatus = true }) => {
         <FaEllipsisH />
     ]
     if (iconstatus) {
-        console.log(currentUser)
+        //console.log(currentUser)
         return (
             <div className="list-group">
                 <li className="list-group-item list-group-item-action"> <IoLogoTwitter /> </li>
