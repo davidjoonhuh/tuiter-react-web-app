@@ -10,7 +10,6 @@ function ProfileScreen() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const save = async () => { 
-        console.log("save profile: " + profile)
         await dispatch(updateUserThunk(profile)); };
 
     useEffect(() => {
