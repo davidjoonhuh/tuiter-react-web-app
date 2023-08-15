@@ -1,6 +1,6 @@
-import { useDispatch } from "react-redux";
 import { deleteTuitThunk } from "../services/tuits-thunks";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { MdVerified } from "react-icons/md"
 import TuitStats from "./tuit-stats";
 import { AiOutlineClose } from "react-icons/ai"
@@ -27,6 +27,8 @@ const TuitItem = (
   const deleteTuitHandler = (id) => {
     dispatch(deleteTuitThunk(id));
   }
+  const { currentUser } = useSelector((state) => state.user);
+  const [profile, setProfile] = useState(currentUser);
   return (
     <li className="list-group-item">
       <div className="row">
@@ -37,7 +39,7 @@ const TuitItem = (
           <div>
             <AiOutlineClose className="bi bi-x-lg float-end"
               onClick={() => deleteTuitHandler(tuit._id)}> </AiOutlineClose>
-            <span className="fw-bolder"> {tuit.username}  </span>
+            <span className="fw-bolder"> {profile.username}  </span>
             <MdVerified /> {tuit.handle} · {tuit.time}
           </div>
           <div> {tuit.tuit} </div>
