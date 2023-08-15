@@ -37,7 +37,7 @@ const TuitItem = (
           <div>
             <AiOutlineClose className="bi bi-x-lg float-end"
               onClick={() => deleteTuitHandler(tuit._id)}> </AiOutlineClose>
-            <span className="fw-bolder"> {tuit.userName}  </span>
+            <span className="fw-bolder"> {tuit.username}  </span>
             <MdVerified /> {tuit.handle} · {tuit.time}
           </div>
           <div> {tuit.tuit} </div>
